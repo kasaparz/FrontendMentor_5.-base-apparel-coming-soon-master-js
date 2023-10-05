@@ -34,8 +34,8 @@ All screenshots are in Design folder
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Repozitory GitHub](https://github.com/kasaparz/FrontendMentor_5.-base-apparel-coming-soon-master-js)
+- Live Site URL: [Github](https://kasaparz.github.io/FrontendMentor_5.-base-apparel-coming-soon-master-js/)
 
 ## My process
 
@@ -51,4 +51,3 @@ All screenshots are in Design folder
 
 - Website - [Kasaparz](https://github.com/kasaparz)
 - Frontend Mentor - [@kasaparz](https://www.frontendmentor.io/profile/kasaparz)
-  ve based on what links you'd like to share.\*\*
