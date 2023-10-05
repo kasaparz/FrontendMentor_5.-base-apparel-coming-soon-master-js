@@ -1,0 +1,201 @@
+:root {
+  --clr-desaturatedRed: hsl(0, 36%, 70%);
+  --clr-softRed: hsl(0, 93%, 68%);
+
+  --clr-darkGrayishRed: hsl(0, 6%, 24%);
+  --clr-soft: hsl(0, 80%, 86%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+html {
+  font-family: "Josefin Sans", sans-serif;
+}
+body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* - Weights: 300, 400, 600 */
+
+.wrapper {
+  max-width: 375px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  margin: 0 auto;
+  flex-direction: column;
+  position: relative;
+  background: linear-gradient(
+    0deg,
+    rgba(255, 245, 245, 1) 25%,
+    rgba(255, 255, 255, 1) 53%
+  );
+}
+.small {
+  display: block;
+}
+.big {
+  display: none;
+}
+.logo {
+  display: none;
+}
+
+nav {
+  padding: 30px 30px;
+  align-self: self-start;
+}
+nav img {
+  height: 25px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+footer {
+  margin-top: 50px;
+}
+.title {
+  margin: 30px auto 10px auto;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 40px;
+  color: var(--clr-darkGrayishRed);
+}
+.title-txt {
+  list-style: none;
+  line-height: 44px;
+  color: var(--clr-darkGrayishRed);
+  letter-spacing: 6px;
+  font-weight: 600;
+}
+span {
+  color: var(--clr-desaturatedRed);
+  font-weight: 200;
+}
+
+.description {
+  color: var(--clr-desaturatedRed);
+  text-align: center;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 10px;
+}
+
+#form {
+  margin-top: 16px;
+  border: #ce9898 solid 1px;
+  display: flex;
+  border-radius: 32px;
+  padding-left: 18px;
+  align-items: center;
+  width: 300px;
+}
+
+#form input {
+  border: none;
+  width: 100%;
+  background: transparent;
+}
+
+#form input:focus {
+  outline: none;
+}
+
+#form ::placeholder {
+  color: #ce9898;
+}
+
+#form button {
+  background: linear-gradient(#f8bfbf, #ee8b8b);
+
+  border: none;
+  padding: 14px 30px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#form button:hover {
+  background: #f4caca;
+  transform: scale(1.1);
+}
+
+#form.error {
+  border-color: #f96464;
+  border-width: 2px;
+}
+
+.error-icon {
+  margin-right: 1em;
+  margin-top: 0.125em;
+  display: none;
+}
+
+.error-message {
+  padding-left: 1.25em;
+  margin-top: 0.5em;
+  font-size: 0.865rem;
+  color: #f96464;
+  text-align: start;
+}
+@media (min-width: 780px) {
+  .wrapper {
+    flex-direction: row-reverse;
+    max-width: 1200px;
+    height: 600px;
+    padding: 20px;
+  }
+  .small {
+    display: none;
+  }
+  .big {
+    display: block;
+    height: 600px;
+  }
+  .logo {
+    display: block;
+  }
+  .logoFirst {
+    display: none;
+  }
+  .description {
+    text-align: start;
+    width: 75%;
+  }
+  .title {
+    text-align: start;
+    width: 100%;
+  }
+  main {
+    align-items: start;
+  }
+  footer {
+    margin-top: 50px;
+  }
+  .input {
+    width: 500px;
+  }
+}
